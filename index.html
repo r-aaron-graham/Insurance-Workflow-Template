@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Insurance AI Workflow Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Digital Insurance & AI Workflow</h1>
+      <p>
+        Explore how customers, policies, claims, AI models, fraud checks, payments,
+        documents, and omni-channel communications work together in a modern,
+        AI-enabled insurance ecosystem.
+      </p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- LEFT: Flow diagram -->
+    <section class="flow-diagram" aria-label="Insurance AI workflow">
+      <h2 class="section-title">Logical Sequence of Events</h2>
+
+      <!-- Step A -->
+      <div class="flow-step" data-step-id="customer-lifecycle">
+        <div class="step-label">A</div>
+        <div class="step-body">
+          <h3>Customer Lifecycle &amp; Segmentation</h3>
+          <p class="step-summary">
+            Customer joins the insurer, is scored, segmented, and linked to an agent.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about Customer Lifecycle">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="customer-lifecycle"></div>
+
+      <!-- Step B -->
+      <div class="flow-step" data-step-id="policy-product">
+        <div class="step-label">B</div>
+        <div class="step-body">
+          <h3>Policy &amp; Product Management</h3>
+          <p class="step-summary">
+            Agent helps the customer pick a product and bind a policy that can evolve over time.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about Policy &amp; Product Management">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="policy-product"></div>
+
+      <!-- Step C -->
+      <div class="flow-step" data-step-id="claims">
+        <div class="step-label">C</div>
+        <div class="step-body">
+          <h3>Claims Process</h3>
+          <p class="step-summary">
+            When a loss happens, the claim is filed, investigated, and tracked.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about Claims Process">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="claims"></div>
+
+      <!-- Step D -->
+      <div class="flow-step" data-step-id="ai-interaction">
+        <div class="step-label">D</div>
+        <div class="step-body">
+          <h3>AI Interaction &amp; Automation</h3>
+          <p class="step-summary">
+            Chatbots and voicebots answer questions, route issues, and escalate complex cases.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about AI Interaction &amp; Automation">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="ai-interaction"></div>
+
+      <!-- Step E -->
+      <div class="flow-step" data-step-id="fraud-risk">
+        <div class="step-label">E</div>
+        <div class="step-body">
+          <h3>Fraud Detection &amp; Risk</h3>
+          <p class="step-summary">
+            AI-driven fraud checks score claims and trigger alerts for review.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about Fraud Detection &amp; Risk">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="fraud-risk"></div>
+
+      <!-- Step F -->
+      <div class="flow-step" data-step-id="payments">
+        <div class="step-label">F</div>
+        <div class="step-body">
+          <h3>Payments &amp; Transactions</h3>
+          <p class="step-summary">
+            Premium billing and claim payouts are recorded as auditable transactions.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about Payments &amp; Transactions">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="payments"></div>
+
+      <!-- Step G -->
+      <div class="flow-step" data-step-id="documentation">
+        <div class="step-label">G</div>
+        <div class="step-body">
+          <h3>Documentation &amp; Compliance</h3>
+          <p class="step-summary">
+            ID proofs, policy docs, and claim evidence are uploaded, classified, and verified.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about Documentation &amp; Compliance">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="documentation"></div>
+
+      <!-- Step H -->
+      <div class="flow-step" data-step-id="communication">
+        <div class="step-label">H</div>
+        <div class="step-body">
+          <h3>Communication &amp; Omni-Channel</h3>
+          <p class="step-summary">
+            Email, SMS, chat, and portals keep customers, agents, and systems aligned.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about Communication &amp; Omni-Channel">
+          ⓘ
+        </button>
+      </div>
+      <div class="flow-arrow" data-from="communication"></div>
+
+      <!-- Step I -->
+      <div class="flow-step" data-step-id="ai-feedback">
+        <div class="step-label">I</div>
+        <div class="step-body">
+          <h3>Continuous AI Feedback Loop</h3>
+          <p class="step-summary">
+            AI learns from outcomes to refine risk scores and recommendations.
+          </p>
+        </div>
+        <button class="step-info-button" type="button" aria-label="More about AI Feedback Loop">
+          ⓘ
+        </button>
+      </div>
+    </section>
+
+    <!-- RIGHT: Detail panel -->
+    <section class="detail-panel" aria-live="polite">
+      <h2 class="section-title">Step Details</h2>
+
+      <div id="detail-content" class="detail-card">
+        <h3 id="detail-title">Hover a step to explore the flow</h3>
+        <p id="detail-description">
+          Move your cursor over any box in the diagram to see what happens at that stage,
+          how AI is used, and which glossary terms are most important. Click the ⓘ button
+          on a step to open a pop-up with full details.
+        </p>
+
+        <div class="detail-grid">
+          <div>
+            <h4>Key Glossary (for this step)</h4>
+            <ul id="detail-glossary" class="glossary-list">
+              <!-- Filled by script.js -->
+            </ul>
+          </div>
+
+          <div>
+            <h4>Where the flow can go next</h4>
+            <ul id="detail-next" class="next-steps-list">
+              <!-- Filled by script.js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <aside class="help-card">
+        <h4>How to use this explorer</h4>
+        <ol>
+          <li>Hover on a box to highlight it and see its role.</li>
+          <li>Watch the arrows animate to show downstream flow.</li>
+          <li>Review the step-specific glossary on the right.</li>
+          <li>Click ⓘ for a focused pop-up describing the step.</li>
+        </ol>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Modal for step pop-ups -->
+  <div id="step-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close details">×</button>
+      <div class="modal-body">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+
+        <h4>Key glossary for this step</h4>
+        <ul id="modal-glossary" class="glossary-list"></ul>
+
+        <h4>Possible next directions</h4>
+        <ul id="modal-next" class="next-steps-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
