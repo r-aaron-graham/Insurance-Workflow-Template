@@ -2,30 +2,200 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Insurance AI Workflow Explorer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI-powered insurance workflow automation platform. Reduce processing time by 80%, improve customer satisfaction by 45%, and detect fraud with 96%+ accuracy." />
+  <meta name="keywords" content="insurance automation, AI insurance, workflow management, claims processing, fraud detection, insurance technology" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Insurance AI Workflow Explorer - Digital Transformation Platform" />
+  <meta property="og:description" content="Streamline your insurance operations with AI-powered workflow automation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/og-image.jpg" />
+  
+  <title>Insurance AI Workflow Explorer | Digital Transformation Platform</title>
+  
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
 </head>
 <body>
-  <header class="site-header">
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" role="banner">
     <div class="header-inner">
-      <h1>Digital Insurance & AI Workflow</h1>
-      <p>
-        Explore how customers, policies, claims, AI models, fraud checks, payments,
-        documents, and omni-channel communications work together in a modern,
-        AI-enabled insurance ecosystem.
-      </p>
+      <div class="header-brand">
+        <div class="site-logo" aria-label="Company Logo">AI</div>
+        <div class="site-title-group">
+          <h1>Insurance AI Workflow Platform</h1>
+          <p class="site-tagline">Streamline Operations with Intelligent Automation</p>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+      
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#integrations" class="nav-link">Integrations</a>
+        <a href="#workflow" class="nav-link active">Workflow</a>
+        <a href="#roi-calculator" class="nav-link">ROI Calculator</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#demo" class="nav-link nav-cta">Request Demo</a>
+      </nav>
     </div>
   </header>
 
-  <main class="layout">
+  <!-- Hero Section -->
+  <section class="hero-section" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <h2 id="hero-title" class="hero-title">
+        Transform Insurance Operations with AI
+      </h2>
+      <p class="hero-description">
+        Streamline your insurance operations with AI-powered workflow automation. 
+        Reduce processing time by 80%, improve customer satisfaction by 45%, and 
+        detect fraud with 96%+ accuracy.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#demo" class="btn btn-primary">
+          Schedule a Demo
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#workflow" class="btn btn-secondary">
+          Explore Workflow
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">80%</span>
+          <span class="hero-stat-label">Faster Processing</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">96%</span>
+          <span class="hero-stat-label">Fraud Detection Rate</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">45%</span>
+          <span class="hero-stat-label">Higher Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Dashboard -->
+  <section class="metrics-dashboard" id="features" aria-labelledby="metrics-title">
+    <h2 id="metrics-title" class="sr-only">Key Performance Metrics</h2>
+    
+    <div class="metric-card">
+      <h3>Average Quote-to-Bind</h3>
+      <span class="metric-value">4.2 min</span>
+      <span class="metric-change positive">↓ 65% with AI</span>
+    </div>
+    
+    <div class="metric-card">
+      <h3>Claims Processing Time</h3>
+      <span class="metric-value">18 hours</span>
+      <span class="metric-change positive">↓ 80% faster</span>
+    </div>
+    
+    <div class="metric-card">
+      <h3>Fraud Detection Rate</h3>
+      <span class="metric-value">96.3%</span>
+      <span class="metric-change positive">↑ 40% accuracy</span>
+    </div>
+    
+    <div class="metric-card">
+      <h3>Customer Satisfaction</h3>
+      <span class="metric-value">4.8/5</span>
+      <span class="metric-change positive">↑ 45% improvement</span>
+    </div>
+  </section>
+
+  <!-- Performance Stats -->
+  <div class="performance-stats">
+    <span>🔒 99.9% Uptime SLA</span>
+    <span>⚡ &lt;200ms API Response</span>
+    <span>🛡️ 256-bit Encryption</span>
+    <span>🔄 Real-time Sync</span>
+  </div>
+
+  <!-- Persona Selector -->
+  <section class="persona-selector" aria-labelledby="persona-title">
+    <h2 id="persona-title" class="sr-only">View by Role</h2>
+    <button class="persona-btn" data-persona="all">All Users</button>
+    <button class="persona-btn active" data-persona="executive">Executive View</button>
+    <button class="persona-btn" data-persona="agent">Agent View</button>
+    <button class="persona-btn" data-persona="adjuster">Claims Adjuster</button>
+    <button class="persona-btn" data-persona="underwriter">Underwriter View</button>
+  </section>
+
+  <!-- Use Case Tabs -->
+  <section class="use-case-tabs" aria-labelledby="use-case-title">
+    <h2 id="use-case-title" class="section-title" style="text-align: center;">Insurance Product Lines</h2>
+    <div class="tab-list" role="tablist">
+      <button class="tab-button active" role="tab" aria-selected="true" data-tab="auto">Personal Auto</button>
+      <button class="tab-button" role="tab" aria-selected="false" data-tab="home">Homeowners</button>
+      <button class="tab-button" role="tab" aria-selected="false" data-tab="commercial">Commercial P&amp;C</button>
+      <button class="tab-button" role="tab" aria-selected="false" data-tab="health">Health Insurance</button>
+      <button class="tab-button" role="tab" aria-selected="false" data-tab="life">Life Insurance</button>
+    </div>
+    
+    <div class="tab-content active" id="tab-auto" role="tabpanel">
+      <p style="text-align: center; color: var(--muted); padding: var(--space-lg);">
+        Workflow optimized for personal auto insurance with instant quote generation, 
+        photo-based damage assessment, and automated claims processing.
+      </p>
+    </div>
+    
+    <div class="tab-content" id="tab-home" role="tabpanel">
+      <p style="text-align: center; color: var(--muted); padding: var(--space-lg);">
+        Specialized workflow for homeowners insurance including property valuation, 
+        catastrophe modeling, and contractor network management.
+      </p>
+    </div>
+    
+    <div class="tab-content" id="tab-commercial" role="tabpanel">
+      <p style="text-align: center; color: var(--muted); padding: var(--space-lg);">
+        Enterprise workflow for commercial property & casualty with complex risk assessment, 
+        multi-location coverage, and business interruption analytics.
+      </p>
+    </div>
+    
+    <div class="tab-content" id="tab-health" role="tabpanel">
+      <p style="text-align: center; color: var(--muted); padding: var(--space-lg);">
+        HIPAA-compliant workflow for health insurance with medical coding automation, 
+        provider network management, and claims adjudication.
+      </p>
+    </div>
+    
+    <div class="tab-content" id="tab-life" role="tabpanel">
+      <p style="text-align: center; color: var(--muted); padding: var(--space-lg);">
+        Streamlined workflow for life insurance with medical underwriting automation, 
+        beneficiary management, and actuarial modeling.
+      </p>
+    </div>
+  </section>
+
+  <!-- Comparison Toggle -->
+  <div class="comparison-toggle">
+    <button class="comparison-btn" data-mode="before">Before AI</button>
+    <button class="comparison-btn active" data-mode="after">After AI</button>
+  </div>
+
+  <!-- Main Workflow Layout -->
+  <main class="layout" id="main-content" role="main">
     <!-- LEFT: Flow diagram -->
-    <section class="flow-diagram" aria-label="Insurance AI workflow">
+    <section class="flow-diagram" id="workflow" aria-label="Insurance AI workflow">
       <h2 class="section-title">Logical Sequence of Events</h2>
 
       <!-- Step A -->
-      <div class="flow-step" data-step-id="customer-lifecycle">
-        <div class="step-label">A</div>
+      <div class="flow-step" data-step-id="customer-lifecycle" data-category="onboarding">
+        <div class="step-label" aria-hidden="true">A</div>
         <div class="step-body">
           <h3>Customer Lifecycle &amp; Segmentation</h3>
           <p class="step-summary">
@@ -36,11 +206,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="customer-lifecycle"></div>
+      <div class="flow-arrow" data-from="customer-lifecycle" aria-hidden="true"></div>
 
       <!-- Step B -->
-      <div class="flow-step" data-step-id="policy-product">
-        <div class="step-label">B</div>
+      <div class="flow-step" data-step-id="policy-product" data-category="onboarding">
+        <div class="step-label" aria-hidden="true">B</div>
         <div class="step-body">
           <h3>Policy &amp; Product Management</h3>
           <p class="step-summary">
@@ -51,11 +221,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="policy-product"></div>
+      <div class="flow-arrow" data-from="policy-product" aria-hidden="true"></div>
 
       <!-- Step C -->
-      <div class="flow-step" data-step-id="claims">
-        <div class="step-label">C</div>
+      <div class="flow-step" data-step-id="claims" data-category="claims">
+        <div class="step-label" aria-hidden="true">C</div>
         <div class="step-body">
           <h3>Claims Process</h3>
           <p class="step-summary">
@@ -66,11 +236,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="claims"></div>
+      <div class="flow-arrow" data-from="claims" aria-hidden="true"></div>
 
       <!-- Step D -->
-      <div class="flow-step" data-step-id="ai-interaction">
-        <div class="step-label">D</div>
+      <div class="flow-step" data-step-id="ai-interaction" data-category="automation">
+        <div class="step-label" aria-hidden="true">D</div>
         <div class="step-body">
           <h3>AI Interaction &amp; Automation</h3>
           <p class="step-summary">
@@ -81,11 +251,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="ai-interaction"></div>
+      <div class="flow-arrow" data-from="ai-interaction" aria-hidden="true"></div>
 
       <!-- Step E -->
-      <div class="flow-step" data-step-id="fraud-risk">
-        <div class="step-label">E</div>
+      <div class="flow-step" data-step-id="fraud-risk" data-category="fraud">
+        <div class="step-label" aria-hidden="true">E</div>
         <div class="step-body">
           <h3>Fraud Detection &amp; Risk</h3>
           <p class="step-summary">
@@ -96,11 +266,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="fraud-risk"></div>
+      <div class="flow-arrow" data-from="fraud-risk" aria-hidden="true"></div>
 
       <!-- Step F -->
-      <div class="flow-step" data-step-id="payments">
-        <div class="step-label">F</div>
+      <div class="flow-step" data-step-id="payments" data-category="payments">
+        <div class="step-label" aria-hidden="true">F</div>
         <div class="step-body">
           <h3>Payments &amp; Transactions</h3>
           <p class="step-summary">
@@ -111,11 +281,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="payments"></div>
+      <div class="flow-arrow" data-from="payments" aria-hidden="true"></div>
 
       <!-- Step G -->
-      <div class="flow-step" data-step-id="documentation">
-        <div class="step-label">G</div>
+      <div class="flow-step" data-step-id="documentation" data-category="compliance">
+        <div class="step-label" aria-hidden="true">G</div>
         <div class="step-body">
           <h3>Documentation &amp; Compliance</h3>
           <p class="step-summary">
@@ -126,11 +296,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="documentation"></div>
+      <div class="flow-arrow" data-from="documentation" aria-hidden="true"></div>
 
       <!-- Step H -->
-      <div class="flow-step" data-step-id="communication">
-        <div class="step-label">H</div>
+      <div class="flow-step" data-step-id="communication" data-category="communication">
+        <div class="step-label" aria-hidden="true">H</div>
         <div class="step-body">
           <h3>Communication &amp; Omni-Channel</h3>
           <p class="step-summary">
@@ -141,11 +311,11 @@
           ⓘ
         </button>
       </div>
-      <div class="flow-arrow" data-from="communication"></div>
+      <div class="flow-arrow" data-from="communication" aria-hidden="true"></div>
 
       <!-- Step I -->
-      <div class="flow-step" data-step-id="ai-feedback">
-        <div class="step-label">I</div>
+      <div class="flow-step" data-step-id="ai-feedback" data-category="automation">
+        <div class="step-label" aria-hidden="true">I</div>
         <div class="step-body">
           <h3>Continuous AI Feedback Loop</h3>
           <p class="step-summary">
@@ -159,7 +329,7 @@
     </section>
 
     <!-- RIGHT: Detail panel -->
-    <section class="detail-panel" aria-live="polite">
+    <section class="detail-panel" aria-live="polite" aria-atomic="true">
       <h2 class="section-title">Step Details</h2>
 
       <div id="detail-content" class="detail-card">
@@ -173,21 +343,21 @@
         <div class="detail-grid">
           <div>
             <h4>Key Glossary (for this step)</h4>
-            <ul id="detail-glossary" class="glossary-list">
+            <ul id="detail-glossary" class="glossary-list" role="list">
               <!-- Filled by script.js -->
             </ul>
           </div>
 
           <div>
             <h4>Where the flow can go next</h4>
-            <ul id="detail-next" class="next-steps-list">
+            <ul id="detail-next" class="next-steps-list" role="list">
               <!-- Filled by script.js -->
             </ul>
           </div>
         </div>
       </div>
 
-      <aside class="help-card">
+      <aside class="help-card" role="complementary">
         <h4>How to use this explorer</h4>
         <ol>
           <li>Hover on a box to highlight it and see its role.</li>
@@ -199,23 +369,245 @@
     </section>
   </main>
 
+  <!-- Integrations Section -->
+  <section class="integrations-section" id="integrations" aria-labelledby="integrations-title">
+    <h2 id="integrations-title">Seamless Integrations</h2>
+    <p style="text-align: center; color: var(--muted); margin-bottom: var(--space-xl); max-width: 700px; margin-left: auto; margin-right: auto;">
+      Connect with your existing insurance systems and technology stack
+    </p>
+    
+    <div class="integration-grid">
+      <div class="integration-logo">Guidewire</div>
+      <div class="integration-logo">Duck Creek</div>
+      <div class="integration-logo">Salesforce</div>
+      <div class="integration-logo">Majesco</div>
+      <div class="integration-logo">AWS</div>
+      <div class="integration-logo">Azure</div>
+      <div class="integration-logo">Applied Epic</div>
+      <div class="integration-logo">DocuSign</div>
+      <div class="integration-logo">Stripe</div>
+      <div class="integration-logo">Plaid</div>
+      <div class="integration-logo">Twilio</div>
+      <div class="integration-logo">SendGrid</div>
+    </div>
+  </section>
+
+  <!-- Compliance Section -->
+  <section class="compliance-section" aria-labelledby="compliance-title">
+    <h2 id="compliance-title" class="sr-only">Compliance and Security</h2>
+    
+    <div class="compliance-badges" role="list">
+      <div class="compliance-badge" role="listitem" aria-label="SOC 2 Certified">SOC 2</div>
+      <div class="compliance-badge" role="listitem" aria-label="HIPAA Compliant">HIPAA</div>
+      <div class="compliance-badge" role="listitem" aria-label="ISO 27001 Certified">ISO</div>
+      <div class="compliance-badge" role="listitem" aria-label="PCI DSS Compliant">PCI DSS</div>
+    </div>
+    
+    <div class="compliance-text">
+      <span>✓ GDPR Ready</span>
+      <span>✓ CCPA Compliant</span>
+      <span>✓ State-Specific Regulations</span>
+      <span>✓ NAIC Standards</span>
+    </div>
+  </section>
+
+  <!-- ROI Calculator -->
+  <section class="roi-calculator" id="roi-calculator" aria-labelledby="roi-title">
+    <h2 id="roi-title">Calculate Your ROI</h2>
+    <p style="text-align: center; color: var(--muted); margin-bottom: var(--space-lg);">
+      See how much you could save with AI-powered automation
+    </p>
+    
+    <form id="roi-form" aria-label="ROI calculation form">
+      <div class="roi-input-group">
+        <label for="annual-policies">Annual policies processed</label>
+        <input type="number" id="annual-policies" name="annual-policies" placeholder="e.g., 50000" min="0" required />
+      </div>
+      
+      <div class="roi-input-group">
+        <label for="avg-claim">Average claim amount ($)</label>
+        <input type="number" id="avg-claim" name="avg-claim" placeholder="e.g., 5000" min="0" required />
+      </div>
+      
+      <div class="roi-input-group">
+        <label for="processing-time">Current processing time (hours)</label>
+        <input type="number" id="processing-time" name="processing-time" placeholder="e.g., 24" min="0" step="0.5" required />
+      </div>
+      
+      <button type="submit" class="roi-calculate-btn">Calculate Savings</button>
+    </form>
+    
+    <div class="roi-result" id="roi-result" role="status" aria-live="polite">
+      <h3>Your Potential Savings</h3>
+      <div class="roi-result-item">
+        <span class="roi-result-label">Estimated Annual Savings:</span>
+        <span class="roi-result-value" id="roi-savings">$0</span>
+      </div>
+      <div class="roi-result-item">
+        <span class="roi-result-label">Time Saved Annually:</span>
+        <span class="roi-result-value" id="roi-time">0 hours</span>
+      </div>
+      <div class="roi-result-item">
+        <span class="roi-result-label">Efficiency Gain:</span>
+        <span class="roi-result-value" id="roi-efficiency">0%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title">Trusted by Insurance Leaders</h2>
+    
+    <div class="testimonials-grid">
+      <article class="testimonial">
+        <blockquote class="testimonial-quote">
+          Reduced our claims processing time from 5 days to 18 hours. The AI fraud detection has saved us millions in fraudulent payouts.
+        </blockquote>
+        <cite>
+          <span class="testimonial-author">Sarah Johnson</span>
+          <span class="testimonial-role">VP of Operations, Regional Insurance Co.</span>
+        </cite>
+      </article>
+      
+      <article class="testimonial">
+        <blockquote class="testimonial-quote">
+          Quote-to-bind now takes 4 minutes instead of 45. Our agents love the automation, and customers are thrilled with the speed.
+        </blockquote>
+        <cite>
+          <span class="testimonial-author">Michael Chen</span>
+          <span class="testimonial-role">CTO, National Auto Insurance</span>
+        </cite>
+      </article>
+      
+      <article class="testimonial">
+        <blockquote class="testimonial-quote">
+          The compliance automation alone justifies the investment. We've reduced regulatory incidents by 90% and passed our last audit with flying colors.
+        </blockquote>
+        <cite>
+          <span class="testimonial-author">Emily Rodriguez</span>
+          <span class="testimonial-role">Chief Compliance Officer, Health Insurance Group</span>
+        </cite>
+      </article>
+    </div>
+  </section>
+
+  <!-- Video Demos -->
+  <section class="demo-videos-section" aria-labelledby="videos-title">
+    <h2 id="videos-title">See It In Action</h2>
+    
+    <div class="video-grid">
+      <article class="video-card">
+        <div class="video-thumbnail">
+          <div class="video-play-btn" aria-label="Play video">▶</div>
+        </div>
+        <h4>AI Claims Processing Demo (2:30)</h4>
+      </article>
+      
+      <article class="video-card">
+        <div class="video-thumbnail">
+          <div class="video-play-btn" aria-label="Play video">▶</div>
+        </div>
+        <h4>Fraud Detection in Action (1:45)</h4>
+      </article>
+      
+      <article class="video-card">
+        <div class="video-thumbnail">
+          <div class="video-play-btn" aria-label="Play video">▶</div>
+        </div>
+        <h4>Customer Journey Walkthrough (3:15)</h4>
+      </article>
+    </div>
+  </section>
+
   <!-- Modal for step pop-ups -->
-  <div id="step-modal" class="modal" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="step-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" aria-hidden="true"></div>
+    <div class="modal-dialog" role="document" aria-labelledby="modal-title">
       <button class="modal-close" type="button" aria-label="Close details">×</button>
       <div class="modal-body">
         <h3 id="modal-title"></h3>
         <p id="modal-description"></p>
 
         <h4>Key glossary for this step</h4>
-        <ul id="modal-glossary" class="glossary-list"></ul>
+        <ul id="modal-glossary" class="glossary-list" role="list"></ul>
 
         <h4>Possible next directions</h4>
-        <ul id="modal-next" class="next-steps-list"></ul>
+        <ul id="modal-next" class="next-steps-list" role="list"></ul>
       </div>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#roi-calculator">ROI Calculator</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Solutions</h3>
+          <ul>
+            <li><a href="#auto">Personal Auto</a></li>
+            <li><a href="#home">Homeowners</a></li>
+            <li><a href="#commercial">Commercial P&amp;C</a></li>
+            <li><a href="#health">Health Insurance</a></li>
+            <li><a href="#life">Life Insurance</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#api">API Reference</a></li>
+            <li><a href="#support">Support Center</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="security-footer">
+        <div class="security-badges">
+          <span>🔒 256-bit SSL Encryption</span>
+          <span>🛡️ Penetration Tested</span>
+          <span>✓ Annual Security Audits</span>
+          <span>📋 SOC 2 Type II Certified</span>
+        </div>
+        
+        <div class="legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#security">Security Overview</a>
+          <a href="#compliance">Compliance</a>
+          <a href="#cookies">Cookie Policy</a>
+        </div>
+        
+        <p class="copyright">
+          &copy; 2024 Insurance AI Workflow Platform. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
